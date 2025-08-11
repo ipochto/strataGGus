@@ -41,7 +41,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ninja-build
-
+      
       - name: Install Clang
         if: ${{ contains(matrix.preset, 'clang') }}
         run: |
